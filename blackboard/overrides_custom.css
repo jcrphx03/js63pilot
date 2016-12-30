@@ -1,0 +1,98 @@
+/*
+.overrides_custom css
+
+Place styles for simple UI customization in this file.
+
+This file is loaded after all other CSS, so selectors here will win in case of conflict with default rules.
+ß
+Using this file to customize is the method most likely to conserve your customizations even if markup changes in future product releases.
+
+Extensive customizations may be easier to implement by replacing one or more of the standard theme files in your custom theme folder.
+
+However, if future product releases place styles for new markup components into the files you have replaced, your theme will not have these new styles,
+and therefore, will not display the new components correctly.
+
+*/
+
+/* Blackboard Welcome Logo */
+#loginPage #welcome .logo {
+  background:url(images/bb_logo_welcome.png) no-repeat 0  transparent;
+  
+}   
+
+/* Hide  Amazon logo */
+#amazonLogo {
+  background-image: none;
+}
+
+/* Hide Need Help buttom */
+#needHelp {
+    display: none;
+}
+
+#loginPage #rotating > .primary, #loginPage #rotating > .secondary {
+    display: none;
+}
+
+/* Hide Welcome to Reports Center */
+#loginPage #rotating > .secondary h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: .4em;
+    text-align: center;
+    content:'Welcome to Reports Center';
+
+}
+
+
+/*
+#palette01:after {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: .4em;
+    text-align: center;
+    content:'Welcome to Reports Center';
+}
+*/
+
+
+#loginForm .devices {    
+# background-image: none;
+# background-position: 0 0;
+#background-repeat: no-repeat;
+#background-size: 439px auto;
+#height: 201px;
+#margin: 36px auto;
+#width: 440px;
+#}
+ 
+#loginPage #rotating {
+#    display: none;
+#}
+
+/* Rules for Text - Welcome to BB Reports Center */
+#loginPage #rotating h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: .4em;
+    text-align: center;
+}
+
+
+
+#logo {
+	width:140px;
+	height:26px;
+	background:url(images/Bb_logo.png) no-repeat 0 0 transparent;
+	border:none;
+    margin:4px 8px 2px 10px;
+    
+}
+##logo {
+#	width:140px;
+#	height:30px;
+#	background:url(images/Bb_logo.png) no-repeat 0 0 transparent;
+#	border:none;
+#   margin:4px 8px 4px 8px;
+    
+#}
