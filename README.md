@@ -19,6 +19,13 @@ Cust#3 Images
   favicon.png
   bb_logo.png
 
+
+  Very Important: For favicon.png to be recognized by the system you should enter "favicon.ico" name in the "add file" form and as follow more detail
+                  will be posted in Confluence:
+                  Name (required): favicon.png 
+                  Resource ID (required): favicon.ico  
+          
+
 Cust#4 Tomcat changes
    _In favicon 
     Replace "TIBCO jaspersoft" brand name with "Blackboard Transact" name
