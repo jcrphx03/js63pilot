@@ -17,7 +17,7 @@ and therefore, will not display the new components correctly.
 /* Blackboard Welcome Logo */
 #loginPage #welcome .logo {
   background:url(images/bb_logo_welcome.png) no-repeat 0  transparent;
-  
+      
 }   
 
 /* Hide  Amazon logo */
@@ -30,23 +30,39 @@ and therefore, will not display the new components correctly.
     display: none;
 }
 
-#loginPage #rotating > .primary, #loginPage #rotating > .secondary {
-    display: none;
+#loginPage #rotating > .primary {
+   visibility: hidden;
 }
 
-/* Hide Welcome to Reports Center */
-#loginPage #rotating > .secondary h2 {
-    font-size: 20px;
+
+#loginPage #rotating > .secondary {
+    position: absolute;
+    visibility: hidden;
+}
+
+#loginPage #rotating > .secondary h2:after {
+    font-size: 25px;
     font-weight: normal;
-    margin-bottom: .4em;
-    text-align: center;
-    content:'Welcome to Reports Center';
-
+   # margin-bottom: .4em;
+    content:'Welcome to Card Reports Center';
+    align-content: center;
+    visibility: visible;
 }
+
 
 
 /*
-#palette01:after {
+#loginPage #rotation > .secondary:after {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: .4em;
+    text-align: center;  
+    content:'Welcome to Reports Center'; 
+    visibility: visible;
+}
+*/
+/*
+#loginPage #frame {
     font-size: 20px;
     font-weight: normal;
     margin-bottom: .4em;
@@ -56,30 +72,7 @@ and therefore, will not display the new components correctly.
 */
 
 
-#loginForm .devices {    
-# background-image: none;
-# background-position: 0 0;
-#background-repeat: no-repeat;
-#background-size: 439px auto;
-#height: 201px;
-#margin: 36px auto;
-#width: 440px;
-#}
- 
-#loginPage #rotating {
-#    display: none;
-#}
-
-/* Rules for Text - Welcome to BB Reports Center */
-#loginPage #rotating h2 {
-    font-size: 20px;
-    font-weight: normal;
-    margin-bottom: .4em;
-    text-align: center;
-}
-
-
-
+/* Logo located in the Barner */
 #logo {
 	width:140px;
 	height:26px;
@@ -88,11 +81,3 @@ and therefore, will not display the new components correctly.
     margin:4px 8px 2px 10px;
     
 }
-##logo {
-#	width:140px;
-#	height:30px;
-#	background:url(images/Bb_logo.png) no-repeat 0 0 transparent;
-#	border:none;
-#   margin:4px 8px 4px 8px;
-    
-#}
